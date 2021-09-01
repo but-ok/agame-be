@@ -23,7 +23,7 @@ var mysql_pool = mysql.createPool({
 
 //start server
 var server = require('socket.io');
-server = module_wildcard(server).listen(8080);
+server = module_wildcard(server).listen(process.env.PORT);
 console.log("server started");
 
 server.set('log level', 1);

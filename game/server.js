@@ -72,7 +72,6 @@ server.sockets.on('connection', function(client){
         globalboss.sendTime();
     
     client.on('login', function(session){
-        console.log(session)
         player.login(session);
     });
     client.on('disconnect', function(){
